@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Axe to Grind Café — Coffee, Music & Community</title>
+<meta name="description" content="A neighborhood café where the lattes have setlist names, the kitchen is made-to-order, and the playlist runs on rock 'n roll. Lattes, waffles, sandwiches, and house-baked sweets." />
+<meta property="og:title" content="Axe to Grind Café — Coffee, Music & Community" />
+<meta property="og:description" content="Coffee, Music & Community. Hand-crafted lattes named after your favorite tracks." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/axetogrindlogo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/globals.css" />
+<link rel="icon" type="image/png" href="assets/coffeecupAxeIcon.png" />
+<link rel="apple-touch-icon" href="assets/coffeecupAxeIcon.png" />
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav dark" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/coffeecupAxeIcon.png" alt="" class="nav-logo" width="44" height="44" />
+    <span class="nav-brand-text">
+      <span class="nav-tagline">Coffee · Music · Community</span>
+      <span class="nav-wordmark">Axe to Grind</span>
+    </span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link" aria-current="page">Home</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="story.html" class="nav-link">Story</a>
+    <a href="visit.html" class="nav-link">Visit</a>
+  </div>
+  <a href="menu.html" class="nav-cta">Order Online &rarr;</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=2400&q=85" alt="Latte art on a wooden bar" loading="eager" />
+  </div>
+  <div class="wrap hero-content">
+    <div>
+      <div class="hero-tag fade-up" style="animation-delay: 0.15s;">Coffee · Music · Community</div>
+      <h1 class="display fade-up" style="font-size: clamp(3rem, 9.5vw, 9rem); margin-top: 1.2rem; animation-delay: 0.3s; color: var(--bg);">
+        <span class="nowrap">Coffee &amp; <span class="serif" style="color: var(--amber);">rock &lsquo;n roll,</span></span><br />
+        <span class="nowrap">brewed daily.</span>
+      </h1>
+    </div>
+    <div class="hero-bottom">
+      <p class="lead fade-up" style="animation-delay: 0.55s; color: rgba(250,244,236,0.85); max-width: 56ch; text-align: center;">
+        A neighborhood café where the lattes have setlist names, the kitchen is made-to-order, and the regulars know which booth is theirs. Pull up a chair &mdash; the playlist's on.
+      </p>
+      <div class="fade-up flex gap-4" style="animation-delay: 0.75s; flex-wrap: wrap; justify-content: center;">
+        <a href="menu.html" class="btn btn-amber btn-arrow">See the Menu
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+        <a href="visit.html" class="btn btn-ghost-light btn-arrow">Find the Café
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-mark">Scroll · A2G</div>
+</header>
+
+<!-- MARQUEE -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Espresso</span>
+    <span class="marquee-item marquee-serif">made-to-order</span>
+    <span class="marquee-item">Waffles</span>
+    <span class="marquee-item marquee-serif">house-baked</span>
+    <span class="marquee-item">Lattes</span>
+    <span class="marquee-item marquee-serif">community</span>
+    <span class="marquee-item">Espresso</span>
+    <span class="marquee-item marquee-serif">made-to-order</span>
+    <span class="marquee-item">Waffles</span>
+    <span class="marquee-item marquee-serif">house-baked</span>
+    <span class="marquee-item">Lattes</span>
+    <span class="marquee-item marquee-serif">community</span>
+  </div>
+</section>
+
+<!-- INTRO / EDITORIAL -->
+<section class="section">
+  <div class="wrap">
+    <div class="grid-12">
+      <div style="grid-column: 1 / span 4;" data-reveal>
+        <span class="pill pill-dot">A neighborhood café</span>
+      </div>
+      <div style="grid-column: 5 / -1;">
+        <h2 class="h-1" data-reveal>
+          Slow mornings. <br /><span class="serif text-amber">Loud afternoons.</span> <br />Coffee that makes both better.
+        </h2>
+        <p class="lead mt-6" data-reveal data-delay="2">
+          Every drink on our board is named after a track we love. Every plate comes out of the kitchen the way you ordered it. The decor leans guitars, the staff leans friendly, and the regulars have a strong opinion about the cupcake of the week. Welcome to <em class="serif text-amber">Axe to Grind Café</em>.
+        </p>
+        <div class="mt-7 flex gap-4" style="flex-wrap:wrap;" data-reveal data-delay="3">
+          <a href="story.html" class="btn btn-primary btn-arrow">Read Our Story
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+          <a href="menu.html" class="btn btn-arrow">Browse the Playlist
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE PILLARS -->
+<section class="section" style="background: var(--bg-2);">
+  <div class="wrap">
+    <div class="flex justify-between items-end" style="margin-bottom: 4rem; flex-wrap: wrap; gap: 1.5rem;" data-reveal>
+      <div>
+        <span class="pill pill-amber">What We Pour</span>
+        <h2 class="h-2 mt-5"><span class="nowrap">Three things <span class="text-amber">we take seriously</span>.</span></h2>
+      </div>
+      <div class="dot-row" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="grid grid-3" style="gap: 1.5rem;">
+      <article class="lounge-card" data-reveal>
+        <span class="lounge-badge">01</span>
+        <div class="lounge-card-img">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=85" alt="Espresso pour" loading="lazy" />
+        </div>
+        <div class="lounge-card-body">
+          <h3 class="h-3">The <span class="serif text-amber">Playlist.</span></h3>
+          <p class="text-soft mt-4">Hand-pulled lattes named after the songs that built the café. Mochas, macchiatos, chai, cold brew, italian sodas &mdash; nothing pre-mixed.</p>
+        </div>
+      </article>
+
+      <article class="lounge-card shadow-sage" data-reveal data-delay="2">
+        <span class="lounge-badge">02</span>
+        <div class="lounge-card-img">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85" alt="Breakfast sandwich" loading="lazy" />
+        </div>
+        <div class="lounge-card-body">
+          <h3 class="h-3">Made-to-order <span class="serif text-amber">kitchen.</span></h3>
+          <p class="text-soft mt-4">Breakfast sandwiches on croissant or English muffin, two styles of waffle, chicken salad, BLTs &mdash; built when you ask.</p>
+        </div>
+      </article>
+
+      <article class="lounge-card shadow-wine" data-reveal data-delay="3">
+        <span class="lounge-badge">03</span>
+        <div class="lounge-card-img">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=85" alt="House-baked scones" loading="lazy" />
+        </div>
+        <div class="lounge-card-body">
+          <h3 class="h-3">Sweet <span class="serif text-amber">stuff.</span></h3>
+          <p class="text-soft mt-4">Scones, a rotating cupcake of the week, and a pastry case that looks different every visit. Always something new on the bar.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="section center">
+  <div class="wrap" style="max-width: 1000px;">
+    <p class="pull-quote" data-reveal>
+      "Pull up a chair. Stay a song. <br />
+      <span class="text-amber">Or stay a whole side &mdash;</span> <br />we kept your seat."
+    </p>
+    <div class="mt-6 text-dim" style="font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase;" data-reveal data-delay="1">
+      — The café, every day
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION HIGHLIGHT -->
+<section class="section section-dark">
+  <div class="wrap">
+    <div class="grid-12" style="gap: var(--gutter); align-items: center;">
+      <div style="grid-column: 1 / span 6;" data-reveal>
+        <div class="logo-mark-wrap">
+          <img src="assets/axetogrindlogo.png" alt="Axe to Grind Café logo" class="logo-mark" />
+        </div>
+      </div>
+      <div style="grid-column: 7 / -1;" data-reveal data-delay="2">
+        <span class="pill pill-dark">Where to find us</span>
+        <h2 class="h-1 mt-5" style="color: var(--bg);">One café.<br /><span class="serif" style="color: var(--amber);">One playlist.</span></h2>
+        <p class="lead mt-5" style="color: rgba(250,244,236,0.78);">A neighborhood café you can settle into for a song or a whole afternoon. Free Wi-Fi, friendly staff, and the cupcake of the week is always worth asking about.</p>
+        <div class="mt-7 flex gap-4" style="flex-wrap: wrap;">
+          <a href="visit.html" class="btn btn-amber btn-arrow">Hours &amp; Directions
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+          <a href="menu.html" class="btn btn-ghost-light btn-arrow">View the Playlist
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE / GRID -->
+<section class="section">
+  <div class="wrap">
+    <div data-reveal>
+      <span class="pill">On the bar</span>
+      <h2 class="h-1 mt-5">Open every day.<br /><span class="serif text-amber">Doors. Cup. Bar.</span></h2>
+    </div>
+
+    <div class="grid grid-4 mt-9" style="gap: 1rem;">
+      <div class="card" data-reveal>
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">01</div>
+        <h4 class="h-4 mt-3">Espresso Bar</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Lattes, mochas, macchiatos, americanos, cold brew &mdash; pulled to order.</p>
+      </div>
+      <div class="card" data-reveal data-delay="1">
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">02</div>
+        <h4 class="h-4 mt-3">Italian Sodas</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Eight flavors. Splash of milk &amp; whipped cream optional. Sugar-free available.</p>
+      </div>
+      <div class="card" data-reveal data-delay="2">
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">03</div>
+        <h4 class="h-4 mt-3">Breakfast</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Sandwiches on croissant or English muffin. Waffles two ways. Bacon or sausage.</p>
+      </div>
+      <div class="card" data-reveal data-delay="3">
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">04</div>
+        <h4 class="h-4 mt-3">Lunch</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Chicken salad two ways and a classic BLT &mdash; on white, wheat, or upgrade to a croissant.</p>
+      </div>
+      <div class="card" data-reveal>
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">05</div>
+        <h4 class="h-4 mt-3">Sweets</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Chocolate-chip and cinnamon scones. A weekly rotating cupcake. Worth the visit.</p>
+      </div>
+      <div class="card" data-reveal data-delay="1">
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">06</div>
+        <h4 class="h-4 mt-3">Tea Bar</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Earl Grey, English Breakfast, lemon ginger, chai. Honey &amp; lemon on request.</p>
+      </div>
+      <div class="card" data-reveal data-delay="2">
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">07</div>
+        <h4 class="h-4 mt-3">For the Kids</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Lemonade or chocolate milk &mdash; the easy yes for the small humans.</p>
+      </div>
+      <div class="card" data-reveal data-delay="3">
+        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">08</div>
+        <h4 class="h-4 mt-3">Order Ahead</h4>
+        <p class="text-soft mt-3" style="font-size: 0.95rem;">Skip the line. Place a pickup order online and grab it on your way through.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section section-tight" style="background: var(--bg-2);">
+  <div class="wrap">
+    <div class="grid grid-4">
+      <div data-reveal>
+        <div class="stat-num">8</div>
+        <div class="stat-label">Signature lattes on the playlist</div>
+      </div>
+      <div data-reveal data-delay="1">
+        <div class="stat-num">11</div>
+        <div class="stat-label">Latte syrup flavors to mix &amp; match</div>
+      </div>
+      <div data-reveal data-delay="2">
+        <div class="stat-num">★★★★★</div>
+        <div class="stat-label">Local guide favorite</div>
+      </div>
+      <div data-reveal data-delay="3">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Cupcake of the week, rotating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="wrap">
+    <div data-reveal>
+      <span class="pill">What people say</span>
+      <h2 class="h-2 mt-5">The regulars,<br /><span class="serif text-amber">not the ads.</span></h2>
+    </div>
+    <div class="grid grid-3 mt-8">
+      <blockquote class="card" data-reveal>
+        <div class="text-amber" style="font-size: 1.5rem; line-height: 1;">"</div>
+        <p class="serif" style="font-size: 1.35rem; line-height: 1.45; margin-top: 0.5rem;">This place is amazing. Great food, service, and friendly staff and owners. The chicken salad and the carrot cake cupcake are my favorites. Love the decor too.</p>
+        <footer class="mt-6" style="font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim);">— Scott · Google Local Guide</footer>
+      </blockquote>
+      <blockquote class="card" data-reveal data-delay="1">
+        <div class="text-amber" style="font-size: 1.5rem; line-height: 1;">"</div>
+        <p class="serif" style="font-size: 1.35rem; line-height: 1.45; margin-top: 0.5rem;">This place is awesome. Both my co-worker and myself love it.</p>
+        <footer class="mt-6" style="font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim);">— Devon · Google Review</footer>
+      </blockquote>
+      <blockquote class="card" data-reveal data-delay="2">
+        <div class="text-amber" style="font-size: 1.5rem; line-height: 1;">"</div>
+        <p class="serif" style="font-size: 1.35rem; line-height: 1.45; margin-top: 0.5rem;">Excellent food and friendly owners.</p>
+        <footer class="mt-6" style="font-size: 0.82rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim);">— Scott Jackson · Google Review</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section section-dark" style="padding-block: clamp(6rem, 12vw, 11rem); position: relative; overflow: hidden;">
+  <div style="position:absolute; inset: 0; background: radial-gradient(ellipse at 30% 30%, var(--amber-glow), transparent 55%); pointer-events: none;"></div>
+  <div class="wrap center" style="position: relative;">
+    <span class="pill pill-dark" data-reveal>Today</span>
+    <h2 class="h-mega mt-6" style="color: var(--bg);" data-reveal data-delay="1">
+      The café is<br /><span class="serif" style="color: var(--amber);">open.</span>
+    </h2>
+    <p class="lead mt-6" style="margin: 1.5rem auto 0; color: rgba(250,244,236,0.78);" data-reveal data-delay="2">
+      Espresso machine's hot, the kitchen is on, and there's a chair with your name on it.
+    </p>
+    <div class="mt-8 flex gap-4" style="justify-content: center; flex-wrap: wrap;" data-reveal data-delay="3">
+      <a href="menu.html" class="btn btn-amber btn-arrow">View Full Menu
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+      <a href="visit.html" class="btn btn-ghost-light btn-arrow">Get Directions
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-brand">Axe to <span style="color: var(--amber);">Grind.</span></div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Coffee · Music · Community</h4>
+        <p style="color: rgba(250,244,236,0.7); line-height: 1.6; max-width: 32ch;">A neighborhood café where the lattes have setlist names and the kitchen is made-to-order.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="visit.html">Address</a></li>
+          <li><a href="visit.html">Hours</a></li>
+          <li><a href="visit.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="order.html">Order Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/axetogrindcafe/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/axetogrindcafe/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:hello@axetogrindcafe.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Axe to Grind Café · All rights reserved</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visit — Axe to Grind Café</title>
+<meta name="description" content="Find Axe to Grind Café — hours, directions, and how to get in touch about catering, events, or just to say hi." />
+<meta property="og:image" content="assets/axetogrindlogo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/globals.css" />
+<link rel="icon" type="image/png" href="assets/coffeecupAxeIcon.png" />
+<link rel="apple-touch-icon" href="assets/coffeecupAxeIcon.png" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/coffeecupAxeIcon.png" alt="" class="nav-logo" width="44" height="44" />
+    <span class="nav-brand-text">
+      <span class="nav-tagline">Coffee · Music · Community</span>
+      <span class="nav-wordmark">Axe to Grind</span>
+    </span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="story.html" class="nav-link">Story</a>
+    <a href="visit.html" class="nav-link" aria-current="page">Visit</a>
+  </div>
+  <a href="menu.html" class="nav-cta">Order Online &rarr;</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Header -->
+<header class="section" style="padding-top: 10rem; padding-bottom: 4rem;">
+  <div class="wrap">
+    <span class="pill pill-amber fade-up">Visit</span>
+    <h1 class="h-mega mt-5 fade-up nowrap" style="animation-delay: 0.15s;">
+      Drop by the <span class="serif text-amber">café.</span>
+    </h1>
+    <p class="lead mt-6 fade-up" style="animation-delay: 0.3s; max-width: 60ch;">
+      The bar's open, the playlist is on, and the cupcake of the week is probably almost gone. Skip the line and order ahead, or just walk in and pick a chair.
+    </p>
+    <div class="mt-7 fade-up flex gap-3" style="animation-delay: 0.45s; flex-wrap: wrap;">
+      <a href="menu.html" class="btn btn-amber btn-arrow">
+        Start Pickup Order
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+      <a href="#location" class="btn btn-arrow">Find the Café
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<a id="location"></a>
+<!-- Location -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="wrap">
+    <div class="grid-12" style="gap: var(--gutter); align-items: start;">
+      <div style="grid-column: 1 / span 6;" data-reveal>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=Axe+to+Grind+Cafe&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div style="grid-column: 7 / -1;" data-reveal data-delay="2">
+        <span class="pill pill-amber">The Café</span>
+        <h2 class="h-1 mt-5 nowrap">Axe to <span class="serif text-amber">Grind.</span></h2>
+        <p class="lead mt-5">A neighborhood spot where the lattes have setlist names and the kitchen is made-to-order. Pull up a chair &mdash; we kept your seat.</p>
+
+        <hr class="line" />
+
+        <div class="grid grid-2" style="gap: 2rem;">
+          <div>
+            <div class="location-label">Address</div>
+            <p class="serif" style="font-size: 1.25rem; margin-top: 0.4rem; line-height: 1.4;">
+              <em style="color: var(--text-faint);">Address coming soon</em>
+            </p>
+          </div>
+          <div>
+            <div class="location-label">Phone</div>
+            <p class="serif" style="font-size: 1.25rem; margin-top: 0.4rem;">
+              <em style="color: var(--text-faint);">Phone coming soon</em>
+            </p>
+          </div>
+          <div>
+            <div class="location-label">Hours</div>
+            <p class="mt-2" style="line-height: 2; font-size: 0.95rem;">
+              <em style="color: var(--text-faint);">Hours coming soon &mdash;</em><br />
+              check Instagram for the daily schedule
+            </p>
+          </div>
+          <div>
+            <div class="location-label">Amenities</div>
+            <p class="mt-2" style="line-height: 1.8; font-size: 0.95rem;">
+              Free Wi-Fi · plenty of seating<br />
+              In-store &amp; pickup orders<br />
+              Family- and laptop-friendly
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-7 flex gap-3" style="flex-wrap: wrap;">
+          <a href="https://www.google.com/maps/search/Axe+to+Grind+Cafe" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">
+            Get Directions
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+          <a href="https://www.instagram.com/axetogrindcafe/" target="_blank" rel="noopener" class="btn btn-arrow">Follow on Instagram
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section section-dark">
+  <div class="wrap">
+    <div class="grid-12" style="gap: 4rem; align-items: start;">
+      <div style="grid-column: 1 / span 5;" data-reveal>
+        <span class="pill pill-dark">Get in touch</span>
+        <h2 class="h-1 mt-5" style="color: var(--bg);">Catering. Events.<br /><span class="serif" style="color: var(--amber);">A note for the team.</span></h2>
+        <p class="mt-5" style="color: rgba(250,244,236,0.78); line-height: 1.7; max-width: 42ch;">Hosting a Saturday morning meeting? Sending a tray to the office? Drop us a line &mdash; we'll set it up.</p>
+
+        <div class="mt-9" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div>
+            <div class="location-label" style="color: rgba(250,244,236,0.55);">Email</div>
+            <p class="serif mt-2" style="font-size: 1.2rem;"><a href="mailto:hello@axetogrindcafe.com" style="color: var(--amber);">hello@axetogrindcafe.com</a></p>
+          </div>
+          <div>
+            <div class="location-label" style="color: rgba(250,244,236,0.55);">Follow</div>
+            <p class="mt-2" style="line-height: 1.8;">
+              <a href="https://www.instagram.com/axetogrindcafe/" target="_blank" rel="noopener" style="color: var(--amber);">@axetogrindcafe</a> &nbsp;·&nbsp;
+              <a href="https://www.facebook.com/axetogrindcafe/" target="_blank" rel="noopener" style="color: var(--amber);">Facebook</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="grid-column: 7 / -1;" data-reveal data-delay="2">
+        <form class="grid" style="gap: 1.25rem;" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Thanks — we\\'ll be in touch.'; this.querySelector('button').disabled = true;">
+          <div class="grid grid-2" style="gap: 1rem;">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <input id="topic" type="text" placeholder="Catering, event, gift card…" />
+          </div>
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-amber btn-arrow" style="align-self: start;">
+            Send Note
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-brand">Axe to <span style="color: var(--amber);">Grind.</span></div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Coffee · Music · Community</h4>
+        <p style="color: rgba(250,244,236,0.7); line-height: 1.6; max-width: 32ch;">A neighborhood café where the lattes have setlist names and the kitchen is made-to-order.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="visit.html">Address</a></li>
+          <li><a href="visit.html">Hours</a></li>
+          <li><a href="visit.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="order.html">Order Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/axetogrindcafe/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/axetogrindcafe/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:hello@axetogrindcafe.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Axe to Grind Café · All rights reserved</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>

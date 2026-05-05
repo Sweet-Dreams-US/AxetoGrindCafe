@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu — Axe to Grind Café</title>
+<meta name="description" content="The Playlist: signature lattes, made-to-order food, and cold drinks at Axe to Grind Café. Order online for pickup." />
+<meta property="og:image" content="assets/axetogrindlogo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/globals.css" />
+<link rel="icon" type="image/png" href="assets/coffeecupAxeIcon.png" />
+<link rel="apple-touch-icon" href="assets/coffeecupAxeIcon.png" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/coffeecupAxeIcon.png" alt="" class="nav-logo" width="44" height="44" />
+    <span class="nav-brand-text">
+      <span class="nav-tagline">Coffee · Music · Community</span>
+      <span class="nav-wordmark">Axe to Grind</span>
+    </span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="menu.html" class="nav-link" aria-current="page">Menu</a>
+    <a href="story.html" class="nav-link">Story</a>
+    <a href="visit.html" class="nav-link">Visit</a>
+  </div>
+  <a href="menu.html" class="nav-cta">Order Online &rarr;</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header class="section" style="padding-top: 10rem; padding-bottom: 4rem;">
+  <div class="wrap">
+    <span class="pill pill-amber fade-up">The Menu</span>
+    <h1 class="h-mega mt-5 fade-up" style="animation-delay: 0.15s;">
+      The Playlist.<br /><span class="serif text-amber">Press play.</span>
+    </h1>
+    <p class="lead mt-6 fade-up" style="animation-delay: 0.3s; max-width: 60ch;">
+      Hand-pulled lattes named after the songs we love, food made to order, and cold drinks for the warm afternoons. Tap the <strong>+</strong> next to anything to start a pickup order.
+    </p>
+    <div class="mt-7 flex gap-3 fade-up" style="flex-wrap: wrap; animation-delay: 0.45s;">
+      <a href="#playlist" class="pill">Playlist</a>
+      <a href="#food" class="pill">Food Menu</a>
+      <a href="#others" class="pill">Others</a>
+    </div>
+  </div>
+</header>
+
+<!-- THE PLAYLIST (drinks) -->
+<section id="playlist" class="section" style="padding-top: 4rem;">
+  <div class="wrap">
+    <div class="grid-12">
+      <div style="grid-column: 1 / span 4;" data-reveal>
+        <span class="pill">01 &mdash; The Playlist</span>
+        <h2 class="h-2 mt-5">Lattes<br /><span class="serif text-amber">on rotation.</span></h2>
+        <p class="text-soft mt-5" style="max-width: 32ch;">Signature lattes named after the songs that built the café. Choice of milk on every drink &mdash; oat, almond, or coconut available.</p>
+      </div>
+      <div style="grid-column: 6 / -1;" data-reveal data-delay="2">
+        <div class="menu-row"><div><div class="menu-row-name">Mocha Choca Latte, Ya Ya</div><div class="menu-row-desc">Mocha latte. Ghirardelli chocolate powder, choice of milk, two shots of espresso. Available in milk/white chocolate or skip the espresso for a hot chocolate.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Fleetwood Macchiato</div><div class="menu-row-desc">Caramel macchiato. Choice of milk, vanilla syrup, two shots of espresso, caramel drizzle on top.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Almond Joy To The World</div><div class="menu-row-desc">Chocolate &amp; coconut latte. Choice of milk, Ghirardelli chocolate powder, coconut syrup, two shots of espresso.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Happy Together</div><div class="menu-row-desc">Chocolate &amp; caramel mocha. Choice of milk, Ghirardelli chocolate powder, two shots of espresso, caramel and chocolate drizzle.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Cinnamon Girl</div><div class="menu-row-desc">Cinnamon latte. Choice of milk, cinnamon syrup, two shots of espresso, cinnamon and sugar sprinkled on top.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Americano Band</div><div class="menu-row-desc">Up to four shots of espresso and water. Cream and sweetener on request. Recommended hot 12 oz or iced 16 oz.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Go Your Own Way <span class="text-wine" style="font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-left: 0.5rem; font-weight: 600;">&mdash; Build Your Own</span></div><div class="menu-row-desc">Your signature drink. Syrups: vanilla*, hazelnut, caramel*, cinnamon, butterscotch, peppermint, coconut, maple spice, pumpkin pie, toasted marshmallow, irish cream. *available sugar-free.</div></div><div class="menu-row-price">5.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Chai Tea Latte</div><div class="menu-row-desc">Chai tea concentrate, choice of milk. Add flavored syrup to take it up a notch &mdash; vanilla, coconut, pumpkin spice, hazelnut, etc. Make it a "dirty chai-anna" with a shot of espresso (+$1).</div></div><div class="menu-row-price">5.50</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD MENU -->
+<section id="food" class="section" style="background: var(--bg-2); padding-top: 5rem; padding-bottom: 5rem;">
+  <div class="wrap">
+    <div class="grid-12">
+      <div style="grid-column: 1 / span 4;" data-reveal>
+        <span class="pill pill-amber">02 &mdash; Food Menu</span>
+        <h2 class="h-2 mt-5">Made to<br /><span class="serif text-amber">order.</span></h2>
+        <p class="text-soft mt-5" style="max-width: 32ch;">Scones, waffles, breakfast sandwiches, cupcakes, chicken salad, BLTs. Sandwiches on white or wheat toast &mdash; upgrade to a croissant roll for $1.</p>
+      </div>
+      <div style="grid-column: 6 / -1;" data-reveal data-delay="2">
+        <div class="menu-row"><div><div class="menu-row-name">Scones</div><div class="menu-row-desc">Chocolate chip or cinnamon.</div></div><div class="menu-row-price">3.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Waffles</div><div class="menu-row-desc">"Elvis" &mdash; banana and peanut butter. "Still The One" &mdash; syrup, butter, powdered sugar, cinnamon. Whipped cream on the house.</div></div><div class="menu-row-price">6.00</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Breakfast Sandwiches</div><div class="menu-row-desc">Eggs and cheese on croissant or English muffin. Add bacon or sausage for $2.</div></div><div class="menu-row-price">6.00</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Cupcakes <span class="text-wine" style="font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-left: 0.5rem; font-weight: 600;">&mdash; Rotating Weekly</span></div><div class="menu-row-desc">Our cupcake selection rotates weekly &mdash; ask us about this week's cupcake.</div></div><div class="menu-row-price">3.00</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Chicken Salad</div><div class="menu-row-desc">On white or wheat toast. <em>Fruit &amp; Nut</em> &mdash; chopped chicken, onions, grapes, celery, walnuts, mayonnaise. <em>Traditional</em> &mdash; chopped chicken, onion, celery, mayonnaise. Pickled red onions, lettuce &amp; tomato optional. Add chips &amp; dill spear $2. Croissant roll +$1.</div></div><div class="menu-row-price">6.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">BLT</div><div class="menu-row-desc">Bacon, lettuce, and tomato on white or wheat toast. Add chips &amp; dill spear $2. Croissant roll +$1.</div></div><div class="menu-row-price">6.00</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OTHERS (cold + tea) -->
+<section id="others" class="section" style="padding-top: 5rem;">
+  <div class="wrap">
+    <div class="grid-12">
+      <div style="grid-column: 1 / span 4;" data-reveal>
+        <span class="pill">03 &mdash; Others</span>
+        <h2 class="h-2 mt-5">Cold sips<br /><span class="serif text-amber">&amp; teas.</span></h2>
+        <p class="text-soft mt-5" style="max-width: 32ch;">Italian sodas in eight flavors, classic teas, lemonade-meets-passion-tea, cold brew with cold foam, and the kid drinks the small humans always order.</p>
+      </div>
+      <div style="grid-column: 6 / -1;" data-reveal data-delay="2">
+        <div class="menu-row"><div><div class="menu-row-name">Italian Soda</div><div class="menu-row-desc">Flavored soda with a splash of milk and optional whipped cream. Strawberry, raspberry, blackberry, peach, pineapple, lime, blue cotton candy. Regular or sugar-free.</div></div><div class="menu-row-price">4.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Summer Breeze</div><div class="menu-row-desc">Lemonade, passion tea, strawberry syrup, frozen strawberries on top. The afternoon refresher.</div></div><div class="menu-row-price">4.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Hot Tea</div><div class="menu-row-desc">Earl Grey, English Breakfast, or lemon ginger. Honey and/or lemon on request.</div></div><div class="menu-row-price">3.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Duke Of Earl <span class="text-wine" style="font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-left: 0.5rem; font-weight: 600;">a.k.a. London Fog</span></div><div class="menu-row-desc">Earl Grey tea, topped with vanilla-flavored steamed milk.</div></div><div class="menu-row-price">4.50</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Cold Brew w/ Cold Foam</div><div class="menu-row-desc">Slow-steeped cold brew with our house cold foam on top.</div></div><div class="menu-row-price">6.00</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Kid's Drinks</div><div class="menu-row-desc">Lemonade or chocolate milk &mdash; the easy yes for the small humans.</div></div><div class="menu-row-price">2.25</div></div>
+        <div class="menu-row"><div><div class="menu-row-name">Extra Espresso Shots</div><div class="menu-row-desc">Add a shot to anything. Make any drink a little louder.</div></div><div class="menu-row-price">1.00</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight" style="background: var(--bg-2); border-top: 1px solid var(--line);">
+  <div class="wrap flex justify-between items-center" style="flex-wrap: wrap; gap: 2rem;">
+    <div data-reveal>
+      <h3 class="h-3">Skip the line.</h3>
+      <p class="text-soft mt-2" style="max-width: 50ch;">Tap the <strong>+</strong> next to anything above, customize, then check out for pickup at the café.</p>
+    </div>
+    <a href="order.html" class="btn btn-primary btn-arrow" data-reveal data-delay="1">
+      Review Order
+      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-brand">Axe to <span style="color: var(--amber);">Grind.</span></div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Coffee · Music · Community</h4>
+        <p style="color: rgba(250,244,236,0.7); line-height: 1.6; max-width: 32ch;">A neighborhood café where the lattes have setlist names and the kitchen is made-to-order.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="visit.html">Address</a></li>
+          <li><a href="visit.html">Hours</a></li>
+          <li><a href="visit.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="order.html">Order Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/axetogrindcafe/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/axetogrindcafe/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:hello@axetogrindcafe.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Axe to Grind Café · All rights reserved</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Customize sheet -->
+<div class="customize-overlay" id="customizeOverlay" aria-hidden="true"></div>
+<aside class="customize-sheet" id="customizeSheet" role="dialog" aria-label="Customize your order">
+  <div class="customize-header">
+    <div>
+      <div class="customize-name" id="customizeName">Item</div>
+      <div class="customize-base" id="customizeBase">Starting at $0.00</div>
+    </div>
+    <button class="customize-close" id="customizeClose" aria-label="Close">✕</button>
+  </div>
+  <div class="customize-body" id="customizeBody"></div>
+  <div class="customize-footer">
+    <button class="customize-add" id="customizeAdd" type="button">
+      <span>Add to Order</span>
+      <span class="customize-add-price" id="customizeAddPrice">$0.00</span>
+    </button>
+    <p class="cart-note" style="margin: 0;">Demo upsells · live site uses Square modifiers</p>
+  </div>
+</aside>
+
+<!-- Cart FAB -->
+<button class="cart-fab" id="cartFab" aria-label="View your order">
+  <span>BAG</span>
+  <span class="cart-fab-count" id="cartFabCount">0</span>
+</button>
+
+<!-- Cart overlay + drawer -->
+<div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Your order" role="dialog">
+  <div class="cart-header">
+    <div>
+      <div class="cart-title">Your order</div>
+      <div style="font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); margin-top: 0.25rem;">Pickup · ready in 15–20 min</div>
+    </div>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-footer" id="cartFooter">
+    <div class="cart-total">
+      <span class="cart-total-label">Subtotal</span>
+      <span class="cart-total-amount" id="cartTotal">$0.00</span>
+    </div>
+    <a href="order.html" class="btn btn-primary btn-arrow" style="width: 100%; justify-content: center;">
+      Checkout
+      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+    </a>
+    <p class="cart-note">Demo only · prices are illustrative · pay at pickup</p>
+  </div>
+</aside>
+
+<script src="scripts/main.js" defer></script>
+<script src="scripts/cart.js" defer></script>
+</body>
+</html>
