@@ -213,45 +213,6 @@
   </div>
 </section>
 
-<!-- SVG clip-path defs for the guitar-body cards (hand-drawn bezier silhouettes,
-     paths drawn in 0-100 space then scaled into objectBoundingBox via transform) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <!-- Double Cutaway — two horns at top, contoured waist, full lower bout -->
-    <clipPath id="g-strat" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 30 12 Q 18 12 10 22 Q 0 42 6 65 Q 14 92 42 96 L 58 96 Q 86 92 94 65 Q 100 42 90 22 Q 82 12 70 12 Q 62 22 55 24 L 45 24 Q 38 22 30 12 Z"/>
-    </clipPath>
-    <!-- Single Cutaway — smooth oval body, one notch upper-left -->
-    <clipPath id="g-lp" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 50 4 Q 70 4 85 12 Q 99 30 98 55 Q 92 92 62 99 L 38 99 Q 10 92 4 70 Q 0 55 10 45 Q 22 40 24 30 Q 24 22 32 18 Q 38 10 50 4 Z"/>
-    </clipPath>
-    <!-- Flying V — sharp V cut at the bottom -->
-    <clipPath id="g-v" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 22 6 L 78 6 Q 84 6 86 8 L 100 28 Q 100 32 96 34 L 56 64 L 50 100 L 44 64 L 4 34 Q 0 32 0 28 L 14 8 Q 16 6 22 6 Z"/>
-    </clipPath>
-    <!-- Twin Horn — sharper, more pronounced horns than the Double Cutaway -->
-    <clipPath id="g-sg" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 50 22 Q 38 4 22 4 Q 6 6 4 22 Q 12 36 22 42 Q 4 50 4 67 Q 12 95 42 99 L 58 99 Q 88 95 96 67 Q 96 50 78 42 Q 88 36 96 22 Q 94 6 78 4 Q 62 4 50 22 Z"/>
-    </clipPath>
-    <!-- Offset Body — asymmetric, upper bout shifted, lower bout fuller -->
-    <clipPath id="g-jaz" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 38 6 Q 18 8 10 20 Q 0 38 6 58 Q 10 80 26 92 Q 44 99 58 98 Q 80 96 90 84 Q 98 64 96 44 Q 92 22 80 12 Q 68 6 56 7 L 38 6 Z"/>
-    </clipPath>
-    <!-- Asymmetric — long pointed lower wing on one side -->
-    <clipPath id="g-mb" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 40 6 L 60 6 Q 80 12 90 28 Q 96 46 90 66 Q 80 86 64 94 L 52 95 L 8 100 L 18 80 Q 28 65 24 50 Q 14 30 22 18 Q 30 10 40 6 Z"/>
-    </clipPath>
-    <!-- T-Slab — single cutaway, gentler curves, slabby -->
-    <clipPath id="g-tele" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 32 6 Q 50 4 65 6 Q 86 12 95 32 Q 100 55 94 76 Q 84 95 64 99 L 36 99 Q 10 92 4 70 Q 0 50 8 36 Q 14 26 22 22 Q 24 14 30 12 L 32 6 Z"/>
-    </clipPath>
-    <!-- Wedge — angular asymmetric explorer-style slab -->
-    <clipPath id="g-exp" clipPathUnits="objectBoundingBox">
-      <path transform="scale(0.01)" d="M 55 5 L 96 22 L 84 56 L 96 80 L 80 96 L 40 100 L 8 80 L 22 56 L 8 30 L 40 12 L 55 5 Z"/>
-    </clipPath>
-  </defs>
-</svg>
-
 <!-- INSIDE / GRID -->
 <section class="section">
   <div class="wrap">
@@ -261,45 +222,64 @@
     </div>
 
     <div class="grid grid-4 mt-9" style="gap: 1.25rem 1rem;">
-      <div class="guitar-card guitar-strat gc-yellow" data-reveal>
-        <div class="gc-num">01 · Double Cutaway</div>
-        <h4>Espresso Bar</h4>
-        <p>Lattes, mochas, macchiatos, americanos, cold brew &mdash; pulled to order.</p>
+      <!-- Each card overlays text on a guitar PNG (set by .gc-1..gc-8 in CSS).
+           Add .gc-light on cards whose silhouette is yellow or frosted-blue
+           so the text flips to dark with a light halo. -->
+      <div class="guitar-card gc-1" data-reveal>
+        <div class="gc-content">
+          <div class="gc-num">01 · Brand Purple</div>
+          <h4>Espresso Bar</h4>
+          <p>Lattes, mochas, macchiatos, americanos, cold brew &mdash; pulled to order.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-lp gc-purple" data-reveal data-delay="1">
-        <div class="gc-num">02 · Single Cutaway</div>
-        <h4>Italian Sodas</h4>
-        <p>Eight flavors. Splash of milk &amp; whipped cream optional. Sugar-free available.</p>
+      <div class="guitar-card gc-2" data-reveal data-delay="1">
+        <div class="gc-content">
+          <div class="gc-num">02 · Black Cherry</div>
+          <h4>Italian Sodas</h4>
+          <p>Eight flavors. Splash of milk &amp; whipped cream. Sugar-free available.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-v gc-teal" data-reveal data-delay="2">
-        <div class="gc-num">03 · Flying V</div>
-        <h4>Breakfast</h4>
-        <p>Sandwiches on croissant or English muffin. Waffles two ways. Bacon or sausage.</p>
+      <div class="guitar-card gc-3 gc-light" data-reveal data-delay="2">
+        <div class="gc-content">
+          <div class="gc-num">03 · Brass Yellow</div>
+          <h4>Breakfast</h4>
+          <p>Sandwiches on croissant or English muffin. Waffles two ways.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-sg gc-yellow" data-reveal data-delay="3">
-        <div class="gc-num">04 · Twin Horn</div>
-        <h4>Lunch</h4>
-        <p>Chicken salad two ways and a classic BLT &mdash; white, wheat, or croissant.</p>
+      <div class="guitar-card gc-4" data-reveal data-delay="3">
+        <div class="gc-content">
+          <div class="gc-num">04 · Electric Teal</div>
+          <h4>Lunch</h4>
+          <p>Chicken salad two ways and a classic BLT &mdash; white, wheat, or croissant.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-jaz gc-purple" data-reveal>
-        <div class="gc-num">05 · Offset Body</div>
-        <h4>Sweets</h4>
-        <p>Chocolate-chip and cinnamon scones. A weekly rotating cupcake.</p>
+      <div class="guitar-card gc-5" data-reveal>
+        <div class="gc-content">
+          <div class="gc-num">05 · Hot Magenta</div>
+          <h4>Sweets</h4>
+          <p>Chocolate-chip and cinnamon scones. A weekly rotating cupcake.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-mb gc-teal" data-reveal data-delay="1">
-        <div class="gc-num">06 · Asymmetric</div>
-        <h4>Tea Bar</h4>
-        <p>Earl Grey, English Breakfast, lemon ginger, chai. Honey &amp; lemon on request.</p>
+      <div class="guitar-card gc-6 gc-light" data-reveal data-delay="1">
+        <div class="gc-content">
+          <div class="gc-num">06 · Frosted Blue</div>
+          <h4>Tea Bar</h4>
+          <p>Earl Grey, English Breakfast, lemon ginger, chai. Honey &amp; lemon on request.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-tele gc-yellow" data-reveal data-delay="2">
-        <div class="gc-num">07 · T-Slab</div>
-        <h4>For the Kids</h4>
-        <p>Lemonade or chocolate milk &mdash; the easy yes for the small humans.</p>
+      <div class="guitar-card gc-7" data-reveal data-delay="2">
+        <div class="gc-content">
+          <div class="gc-num">07 · Shadow Grey</div>
+          <h4>For the Kids</h4>
+          <p>Lemonade or chocolate milk &mdash; the easy yes for the small humans.</p>
+        </div>
       </div>
-      <div class="guitar-card guitar-exp gc-purple" data-reveal data-delay="3">
-        <div class="gc-num">08 · Wedge</div>
-        <h4>Order Ahead</h4>
-        <p>Skip the line. Place a pickup order online and grab it on your way through.</p>
+      <div class="guitar-card gc-8" data-reveal data-delay="3">
+        <div class="gc-content">
+          <div class="gc-num">08 · Sunburst Orange</div>
+          <h4>Order Ahead</h4>
+          <p>Skip the line. Place a pickup order online and grab it on your way through.</p>
+        </div>
       </div>
     </div>
   </div>
