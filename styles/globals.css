@@ -1403,53 +1403,17 @@ hr.line { border: 0; border-top: 2px solid var(--ink); margin-block: 2rem; }
   font-weight: 400;
 }
 
-/* --- Shape 1: Stratocaster — double cutaway, two upper horns --- */
-.guitar-strat {
-  clip-path: polygon(
-    35% 0%, 50% 6%, 65% 0%,
-    85% 4%, 95% 12%,
-    100% 35%, 95% 55%, 100% 75%,
-    90% 92%, 70% 100%,
-    30% 100%, 10% 92%,
-    0% 75%, 5% 55%, 0% 35%,
-    5% 12%, 15% 4%
-  );
-  padding-top: 4rem;
-}
-/* --- Shape 2: Les Paul — single cutaway upper-left --- */
-.guitar-lp {
-  clip-path: polygon(
-    30% 0%, 70% 0%,
-    90% 8%, 100% 28%, 100% 72%, 90% 92%,
-    70% 100%, 30% 100%,
-    10% 92%, 0% 70%, 0% 50%, 8% 35%,
-    20% 30%, 18% 18%, 8% 12%, 12% 6%
-  );
-  padding-top: 3.4rem;
-}
-/* --- Shape 3: Flying V — pointed V at the bottom --- */
-.guitar-v {
-  clip-path: polygon(
-    10% 0%, 90% 0%,
-    100% 28%,
-    60% 70%, 50% 100%, 40% 70%,
-    0% 28%
-  );
-  padding-bottom: 5rem;
-}
-/* --- Shape 4: SG — sharper twin horns at the top --- */
-.guitar-sg {
-  clip-path: polygon(
-    35% 12%, 50% 6%, 65% 12%,
-    78% 0%, 95% 6%, 100% 24%, 86% 34%,
-    100% 52%, 92% 78%,
-    82% 96%, 60% 100%, 40% 100%, 18% 96%,
-    8% 78%, 0% 52%,
-    14% 34%, 0% 24%, 5% 6%, 22% 0%
-  );
-  padding-top: 4rem;
-  padding-bottom: 3.5rem;
-}
+/* Each shape references an SVG <clipPath> defined in index.html (#defs-guitar).
+   SVG paths use bezier curves for true guitar-body silhouettes (smooth, ~6-9
+   anchor points each — far fewer "corners" than the previous polygons). */
+.guitar-strat { clip-path: url(#g-strat); padding: 3.6rem 2.2rem 2.4rem; }
+.guitar-lp    { clip-path: url(#g-lp);    padding: 3.2rem 2.5rem 2.6rem; }
+.guitar-v     { clip-path: url(#g-v);     padding: 2rem 2.5rem 4.6rem; }
+.guitar-sg    { clip-path: url(#g-sg);    padding: 3.6rem 2.8rem 2.6rem; }
+.guitar-jaz   { clip-path: url(#g-jaz);   padding: 2.8rem 2.4rem 2.6rem; }
+.guitar-mb    { clip-path: url(#g-mb);    padding: 2.6rem 3rem 3.6rem 2.2rem; }
+.guitar-tele  { clip-path: url(#g-tele);  padding: 2.8rem 2.4rem 2.4rem; }
+.guitar-exp   { clip-path: url(#g-exp);   padding: 2.4rem 3rem; }
 
 /* --- Color variants --- */
 .gc-yellow { background: var(--amber); color: var(--ink); }
