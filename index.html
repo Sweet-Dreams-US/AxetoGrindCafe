@@ -52,7 +52,7 @@
         Now Pouring · Coffee &amp; Rock 'n Roll
       </div>
       <h1 class="display fade-up" style="font-size: clamp(2.6rem, 8.5vw, 8.4rem); margin-top: 1.2rem; animation-delay: 0.3s; color: var(--bg);">
-        <span class="nowrap">Coffee &amp; <span class="serif" style="color: var(--neon);">rock 'n roll,</span></span><br />
+        <span class="nowrap">Coffee &amp; <span class="serif" style="color: var(--amber);">rock 'n roll,</span></span><br />
         <span class="nowrap">brewed daily.</span>
       </h1>
     </div>
@@ -184,15 +184,17 @@
   <div class="wrap">
     <div class="grid-12" style="gap: var(--gutter); align-items: center;">
       <div style="grid-column: 1 / span 6;" data-reveal>
-        <!-- Vinyl record with the logo as the center label -->
+        <!-- Spinning gold-record with the brand icon as the center label -->
         <div class="vinyl-stage">
           <div class="vinyl"></div>
-          <img src="assets/axetogrindlogo.png" alt="Axe to Grind Café logo" class="vinyl-label" />
+          <div class="vinyl-label">
+            <img src="assets/coffeecupAxeIcon.png" alt="Axe to Grind Café icon" />
+          </div>
         </div>
       </div>
       <div style="grid-column: 7 / -1;" data-reveal data-delay="2">
-        <span class="setlist-tag">Side A · Track 01</span>
-        <h2 class="h-1 mt-5" style="color: var(--bg);">One café.<br /><span class="serif" style="color: var(--neon);">One playlist.</span></h2>
+        <span class="setlist-tag" style="color: var(--teal);">Side A · Track 01</span>
+        <h2 class="h-1 mt-5" style="color: var(--bg);">One café.<br /><span class="serif" style="color: var(--amber);">One playlist.</span></h2>
         <p class="lead mt-5" style="color: rgba(250,244,236,0.78);">A neighborhood café you can settle into for a song or a whole afternoon. Free Wi-Fi, friendly staff, and the cupcake of the week is always worth asking about.</p>
         <div class="mt-7 flex gap-4" style="flex-wrap: wrap; align-items: center;">
           <a href="visit.html" class="btn btn-amber btn-arrow">Hours &amp; Directions
@@ -201,8 +203,8 @@
           <a href="menu.html" class="btn btn-ghost-light btn-arrow">View the Playlist
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
           </a>
-          <span class="now-playing">
-            <span class="eq-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+          <span class="now-playing" style="color: var(--teal);">
+            <span class="eq-bars" aria-hidden="true" style="--eq-c: var(--teal);"><span></span><span></span><span></span><span></span><span></span></span>
             Live now
           </span>
         </div>
@@ -219,46 +221,46 @@
       <h2 class="h-1 mt-5">Open every day.<br /><span class="serif text-amber">Doors. Cup. Bar.</span></h2>
     </div>
 
-    <div class="grid grid-4 mt-9" style="gap: 1rem;">
-      <div class="card" data-reveal>
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">01</div>
-        <h4 class="h-4 mt-3">Espresso Bar</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Lattes, mochas, macchiatos, americanos, cold brew &mdash; pulled to order.</p>
+    <div class="grid grid-4 mt-9" style="gap: 1.25rem 1rem;">
+      <div class="guitar-card guitar-strat gc-yellow" data-reveal>
+        <div class="gc-num">01 · Strat</div>
+        <h4>Espresso Bar</h4>
+        <p>Lattes, mochas, macchiatos, americanos, cold brew &mdash; pulled to order.</p>
       </div>
-      <div class="card" data-reveal data-delay="1">
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">02</div>
-        <h4 class="h-4 mt-3">Italian Sodas</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Eight flavors. Splash of milk &amp; whipped cream optional. Sugar-free available.</p>
+      <div class="guitar-card guitar-lp gc-purple" data-reveal data-delay="1">
+        <div class="gc-num">02 · Les Paul</div>
+        <h4>Italian Sodas</h4>
+        <p>Eight flavors. Splash of milk &amp; whipped cream optional. Sugar-free available.</p>
       </div>
-      <div class="card" data-reveal data-delay="2">
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">03</div>
-        <h4 class="h-4 mt-3">Breakfast</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Sandwiches on croissant or English muffin. Waffles two ways. Bacon or sausage.</p>
+      <div class="guitar-card guitar-v gc-teal" data-reveal data-delay="2">
+        <div class="gc-num">03 · Flying V</div>
+        <h4>Breakfast</h4>
+        <p>Sandwiches on croissant or English muffin. Waffles two ways. Bacon or sausage.</p>
       </div>
-      <div class="card" data-reveal data-delay="3">
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">04</div>
-        <h4 class="h-4 mt-3">Lunch</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Chicken salad two ways and a classic BLT &mdash; on white, wheat, or upgrade to a croissant.</p>
+      <div class="guitar-card guitar-sg gc-yellow" data-reveal data-delay="3">
+        <div class="gc-num">04 · SG</div>
+        <h4>Lunch</h4>
+        <p>Chicken salad two ways and a classic BLT &mdash; white, wheat, or croissant.</p>
       </div>
-      <div class="card" data-reveal>
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">05</div>
-        <h4 class="h-4 mt-3">Sweets</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Chocolate-chip and cinnamon scones. A weekly rotating cupcake. Worth the visit.</p>
+      <div class="guitar-card guitar-strat gc-purple" data-reveal>
+        <div class="gc-num">05 · Strat</div>
+        <h4>Sweets</h4>
+        <p>Chocolate-chip and cinnamon scones. A weekly rotating cupcake.</p>
       </div>
-      <div class="card" data-reveal data-delay="1">
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">06</div>
-        <h4 class="h-4 mt-3">Tea Bar</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Earl Grey, English Breakfast, lemon ginger, chai. Honey &amp; lemon on request.</p>
+      <div class="guitar-card guitar-lp gc-teal" data-reveal data-delay="1">
+        <div class="gc-num">06 · Les Paul</div>
+        <h4>Tea Bar</h4>
+        <p>Earl Grey, English Breakfast, lemon ginger, chai. Honey &amp; lemon on request.</p>
       </div>
-      <div class="card" data-reveal data-delay="2">
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">07</div>
-        <h4 class="h-4 mt-3">For the Kids</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Lemonade or chocolate milk &mdash; the easy yes for the small humans.</p>
+      <div class="guitar-card guitar-v gc-yellow" data-reveal data-delay="2">
+        <div class="gc-num">07 · Flying V</div>
+        <h4>For the Kids</h4>
+        <p>Lemonade or chocolate milk &mdash; the easy yes for the small humans.</p>
       </div>
-      <div class="card" data-reveal data-delay="3">
-        <div class="text-amber" style="font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;">08</div>
-        <h4 class="h-4 mt-3">Order Ahead</h4>
-        <p class="text-soft mt-3" style="font-size: 0.95rem;">Skip the line. Place a pickup order online and grab it on your way through.</p>
+      <div class="guitar-card guitar-sg gc-purple" data-reveal data-delay="3">
+        <div class="gc-num">08 · SG</div>
+        <h4>Order Ahead</h4>
+        <p>Skip the line. Place a pickup order online and grab it on your way through.</p>
       </div>
     </div>
   </div>
