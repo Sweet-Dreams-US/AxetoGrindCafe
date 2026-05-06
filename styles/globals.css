@@ -1428,14 +1428,14 @@ hr.line { border: 0; border-top: 2px solid var(--ink); margin-block: 2rem; }
 
 /* --- Eight slots, each pointing at one PNG. Replace the file at the path to
        recolor a slot — the card picks up the new image automatically. --- */
-.gc-1 { background-image: url('assets/blackguitar1.png');   } /* slot: Brand Purple   */
-.gc-2 { background-image: url('assets/guitarmaroon.png');   } /* slot: Black Cherry   */
-.gc-3 { background-image: url('assets/blackguitar2.png');   } /* slot: Brass Yellow   */
-.gc-4 { background-image: url('assets/blueguitar1.png');    } /* slot: Electric Teal  */
-.gc-5 { background-image: url('assets/blackguitar3.png');   } /* slot: Hot Magenta    */
-.gc-6 { background-image: url('assets/blueguitar2.png');    } /* slot: Frosted Blue   */
-.gc-7 { background-image: url('assets/maroonguitar2.png');  } /* slot: Shadow Grey    */
-.gc-8 { background-image: url('assets/blueguitar3.png');    } /* slot: Sunburst Orange */
+.gc-1 { background-image: url('assets/guitar-purple.png');  } /* Brand Purple   #2E1F4A */
+.gc-2 { background-image: url('assets/guitar-cherry.png');  } /* Black Cherry   #660013 */
+.gc-3 { background-image: url('assets/guitar-yellow.png');  } /* Brass Yellow   #F4C247 */
+.gc-4 { background-image: url('assets/guitar-teal.png');    } /* Electric Teal  #14B8B0 */
+.gc-5 { background-image: url('assets/guitar-magenta.png'); } /* Hot Magenta    #FF3D7F */
+.gc-6 { background-image: url('assets/guitar-blue.png');    } /* Frosted Blue   #63E5FF */
+.gc-7 { background-image: url('assets/guitar-shadow.png');  } /* Shadow Grey    #1F1E22 */
+.gc-8 { background-image: url('assets/guitar-orange.png');  } /* Sunburst Orange #D6661E */
 
 @media (max-width: 920px) {
   .guitar-card { aspect-ratio: 5 / 4; min-height: 0; padding: 2.5rem 1.6rem; }
