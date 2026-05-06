@@ -1426,16 +1426,16 @@ hr.line { border: 0; border-top: 2px solid var(--ink); margin-block: 2rem; }
     0 0 4px rgba(255,255,255,0.85);
 }
 
-/* --- Eight slots, each pointing at one PNG. Replace the file at the path to
-       recolor a slot — the card picks up the new image automatically. --- */
-.gc-1 { background-image: url('assets/guitar-purple.png');  } /* Brand Purple   #2E1F4A */
-.gc-2 { background-image: url('assets/guitar-cherry.png');  } /* Black Cherry   #660013 */
-.gc-3 { background-image: url('assets/guitar-yellow.png');  } /* Brass Yellow   #F4C247 */
-.gc-4 { background-image: url('assets/guitar-teal.png');    } /* Electric Teal  #14B8B0 */
-.gc-5 { background-image: url('assets/guitar-magenta.png'); } /* Hot Magenta    #FF3D7F */
-.gc-6 { background-image: url('assets/guitar-blue.png');    } /* Frosted Blue   #63E5FF */
-.gc-7 { background-image: url('assets/guitar-shadow.png');  } /* Shadow Grey    #1F1E22 */
-.gc-8 { background-image: url('assets/guitar-orange.png');  } /* Sunburst Orange #D6661E */
+/* Inline SVG silhouettes — child of each .guitar-card, fills behind text */
+.guitar-card .gc-svg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+  filter: drop-shadow(0 14px 18px rgba(0,0,0,0.18));
+  transition: transform var(--dur) var(--ease);
+}
+.guitar-card:hover .gc-svg { transform: scale(1.04) rotate(-1.5deg); }
+.guitar-card .gc-content { z-index: 2; }
 
 @media (max-width: 920px) {
   .guitar-card { aspect-ratio: 5 / 4; min-height: 0; padding: 2.5rem 1.6rem; }

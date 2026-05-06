@@ -222,10 +222,10 @@
     </div>
 
     <div class="grid grid-4 mt-9" style="gap: 1.25rem 1rem;">
-      <!-- Each card overlays text on a guitar PNG (set by .gc-1..gc-8 in CSS).
-           Add .gc-light on cards whose silhouette is yellow or frosted-blue
-           so the text flips to dark with a light halo. -->
+      <!-- 8 cards, each with an inline SVG guitar silhouette in its slot color.
+           .gc-light flips text dark on the bright (yellow / frosted-blue) ones. -->
       <div class="guitar-card gc-1" data-reveal>
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#2E1F4A" d="M 30 10 Q 22 14 18 22 Q 12 32 14 42 Q 18 50 28 52 Q 22 60 12 72 Q 6 88 12 105 Q 22 122 50 122 Q 78 122 88 105 Q 94 88 88 72 Q 78 60 72 52 Q 82 50 86 42 Q 88 32 82 22 Q 78 14 70 10 Q 60 18 50 18 Q 40 18 30 10 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">01 · Brand Purple</div>
           <h4>Espresso Bar</h4>
@@ -233,6 +233,7 @@
         </div>
       </div>
       <div class="guitar-card gc-2" data-reveal data-delay="1">
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#660013" d="M 35 8 L 65 8 Q 82 12 88 28 Q 94 50 88 78 Q 78 115 60 122 L 40 122 Q 18 115 10 92 Q 5 70 12 55 Q 18 50 24 46 Q 26 40 22 32 Q 18 22 24 16 Q 28 10 35 8 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">02 · Black Cherry</div>
           <h4>Italian Sodas</h4>
@@ -240,6 +241,7 @@
         </div>
       </div>
       <div class="guitar-card gc-3 gc-light" data-reveal data-delay="2">
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#F4C247" d="M 22 8 L 78 8 L 95 28 Q 95 32 90 35 L 56 65 L 50 122 L 44 65 L 10 35 Q 5 32 5 28 L 22 8 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">03 · Brass Yellow</div>
           <h4>Breakfast</h4>
@@ -247,6 +249,7 @@
         </div>
       </div>
       <div class="guitar-card gc-4" data-reveal data-delay="3">
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#14B8B0" d="M 50 22 Q 38 6 22 8 Q 8 14 10 28 Q 16 38 26 42 Q 10 50 10 75 Q 18 110 50 122 Q 82 110 90 75 Q 90 50 74 42 Q 84 38 90 28 Q 92 14 78 8 Q 62 6 50 22 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">04 · Electric Teal</div>
           <h4>Lunch</h4>
@@ -254,6 +257,7 @@
         </div>
       </div>
       <div class="guitar-card gc-5" data-reveal>
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#FF3D7F" d="M 35 10 Q 18 14 10 30 Q 4 55 10 78 Q 18 105 35 118 Q 50 122 58 122 Q 80 118 88 102 Q 95 75 92 48 Q 86 22 72 14 Q 62 10 50 12 L 35 10 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">05 · Hot Magenta</div>
           <h4>Sweets</h4>
@@ -261,6 +265,7 @@
         </div>
       </div>
       <div class="guitar-card gc-6 gc-light" data-reveal data-delay="1">
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#63E5FF" d="M 38 8 L 62 8 Q 82 14 90 32 Q 96 55 86 75 Q 76 95 56 98 L 46 100 L 6 122 L 18 96 Q 28 76 22 55 Q 12 30 22 18 Q 30 10 38 8 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">06 · Frosted Blue</div>
           <h4>Tea Bar</h4>
@@ -268,6 +273,7 @@
         </div>
       </div>
       <div class="guitar-card gc-7" data-reveal data-delay="2">
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#1F1E22" d="M 35 8 Q 55 6 70 10 Q 88 18 92 38 Q 95 65 88 88 Q 78 115 60 122 L 40 122 Q 18 110 12 88 Q 8 62 14 44 Q 20 32 26 26 L 28 14 Q 30 10 35 8 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">07 · Shadow Grey</div>
           <h4>For the Kids</h4>
@@ -275,6 +281,7 @@
         </div>
       </div>
       <div class="guitar-card gc-8" data-reveal data-delay="3">
+        <svg class="gc-svg" viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path fill="#D6661E" d="M 58 8 L 92 22 L 80 55 L 92 78 L 75 105 L 38 122 L 10 100 L 22 60 L 10 35 L 38 18 L 58 8 Z"/></svg>
         <div class="gc-content">
           <div class="gc-num">08 · Sunburst Orange</div>
           <h4>Order Ahead</h4>
