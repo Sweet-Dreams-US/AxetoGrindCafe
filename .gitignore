@@ -1,0 +1,10 @@
+# Local Claude Code dev config (preview server, etc.)
+.claude/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/

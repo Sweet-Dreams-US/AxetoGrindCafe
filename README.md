@@ -16,7 +16,7 @@ Static site for **Axe to Grind Café** — a neighborhood coffee shop where the 
 Pure static — HTML + CSS + vanilla JS. No build step. Hosted free on GitHub Pages.
 
 - **Type:** Anton (display), Inter (body), Caveat (script accents), JetBrains Mono (caps/labels)
-- **Palette:** brand purple `#2E1F4A` (logo color), cream `#FAF4EC`, brass `#D9A441`
+- **Palette:** black cherry `#660013` (brand dark), white smoke `#F5F5F5` (bg), gold `#F4C247` (primary accent), frosted blue `#63E5FF` (secondary accent), shadow grey `#1F1E22` (text), silver `#A5A5A5` (utility)
 - **Brand assets:** `assets/axetogrindlogo.png` (full circular badge) and `assets/coffeecupAxeIcon.png` (cup-with-guitar icon, used as favicon)
 - **Imagery:** Unsplash placeholders — swap with real café photography when ready
 
@@ -51,7 +51,6 @@ gh api -X POST /repos/Sweet-Dreams-US/AxetoGrindCafe/pages \
 - **Address & phone** on `visit.html` (currently "coming soon")
 - **Hours** on `visit.html` and the order-page hours-of-operation in `scripts/order.js`
 - **Real photography** to replace Unsplash placeholders
-- **Final brand colors** if the placeholder palette needs tuning beyond the current logo-derived purple
 
 ## Cart & checkout
 
