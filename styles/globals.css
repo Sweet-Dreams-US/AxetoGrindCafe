@@ -1474,6 +1474,142 @@ hr.line { border: 0; border-top: 2px solid var(--ink); margin-block: 2rem; }
 .guitar-card:hover .gc-svg { transform: rotate(-1.5deg); }
 .guitar-card .gc-content { z-index: 2; }
 
+/* ==========================================================================
+   PHOTO CARDS — editorial image + concert-poster treatment system
+   Each card is a tilted poster with masking tape, a ticket-stub track number,
+   an equalizer "now playing" indicator in the corner, and a film-grain noise
+   overlay. Hover/scroll-active straightens the card (pop-out-of-collage feel).
+   ========================================================================== */
+.guitar-card.gc-photo {
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--shadow);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04) inset,
+    0 18px 40px -14px rgba(0,0,0,0.5),
+    0 6px 12px -8px rgba(0,0,0,0.4);
+  align-items: end;
+  justify-items: stretch;
+  padding: 0;
+  /* Per-card rotation set below by nth-child — overridden on hover/active */
+  transform: rotate(var(--gc-rot, 0deg));
+}
+/* Stagger rotation across the 8 cards so the grid reads as a poster collage */
+.guitar-card.gc-photo:nth-child(1) { --gc-rot: -1.2deg; }
+.guitar-card.gc-photo:nth-child(2) { --gc-rot:  0.8deg; }
+.guitar-card.gc-photo:nth-child(3) { --gc-rot: -0.6deg; }
+.guitar-card.gc-photo:nth-child(4) { --gc-rot:  1.4deg; }
+.guitar-card.gc-photo:nth-child(5) { --gc-rot:  1.0deg; }
+.guitar-card.gc-photo:nth-child(6) { --gc-rot: -1.5deg; }
+.guitar-card.gc-photo:nth-child(7) { --gc-rot:  0.6deg; }
+.guitar-card.gc-photo:nth-child(8) { --gc-rot: -0.9deg; }
+
+/* Image fills the card; subtle warm grade pulls the series together */
+.guitar-card.gc-photo .gc-svg {
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.04);
+  transform: none;
+}
+.guitar-card.gc-photo:hover { transform: rotate(0deg) translateY(-4px); }
+.guitar-card.gc-photo:hover .gc-svg { transform: scale(1.06); }
+
+/* Bottom-up gradient so white text stays legible */
+.guitar-card.gc-photo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    /* film grain via SVG fractal noise */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    linear-gradient(180deg,
+      rgba(31,30,34,0) 30%,
+      rgba(31,30,34,0.55) 65%,
+      rgba(31,30,34,0.95) 100%);
+  background-blend-mode: overlay, normal;
+  opacity: 0.95;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Masking-tape strip at top — different brand color per card */
+.guitar-card.gc-photo::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: 22px;
+  width: 78px; height: 22px;
+  background: var(--gc-tape, var(--amber));
+  transform: rotate(-5deg);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+  opacity: 0.92;
+  z-index: 3;
+}
+.guitar-card.gc-photo:nth-child(1) { --gc-tape: var(--amber); }
+.guitar-card.gc-photo:nth-child(2) { --gc-tape: var(--frost); }
+.guitar-card.gc-photo:nth-child(3) { --gc-tape: var(--cherry); }
+.guitar-card.gc-photo:nth-child(4) { --gc-tape: var(--amber); }
+.guitar-card.gc-photo:nth-child(5) { --gc-tape: var(--cherry); }
+.guitar-card.gc-photo:nth-child(6) { --gc-tape: var(--frost); }
+.guitar-card.gc-photo:nth-child(7) { --gc-tape: var(--amber); }
+.guitar-card.gc-photo:nth-child(8) { --gc-tape: var(--frost); }
+
+/* Content stack at bottom of card */
+.guitar-card.gc-photo .gc-content {
+  max-width: 100%;
+  padding: 1.1rem 1rem 1.15rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.85);
+}
+
+/* Track-number → ticket-stub stamp */
+.guitar-card.gc-photo .gc-num {
+  display: inline-block;
+  background: var(--gc-tape, var(--amber));
+  color: var(--shadow);
+  padding: 0.25rem 0.55rem 0.2rem;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.5rem;
+  text-shadow: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.35);
+}
+.guitar-card.gc-photo h4 {
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+.guitar-card.gc-photo p {
+  color: rgba(245,245,245,0.86);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+/* "Now playing" equalizer bars in the top-right corner */
+.guitar-card.gc-photo .gc-eq {
+  position: absolute;
+  top: 0.8rem; right: 0.8rem;
+  z-index: 3;
+  display: inline-flex; gap: 2px;
+  height: 14px; align-items: flex-end;
+}
+.guitar-card.gc-photo .gc-eq span {
+  width: 3px; background: var(--gc-tape, var(--amber));
+  animation: gc-eq-bounce 0.9s ease-in-out infinite;
+  border-radius: 1px;
+  box-shadow: 0 0 6px var(--gc-tape, var(--amber));
+}
+.guitar-card.gc-photo .gc-eq span:nth-child(1) { animation-delay: -0.1s; height: 60%; }
+.guitar-card.gc-photo .gc-eq span:nth-child(2) { animation-delay: -0.4s; height: 100%; }
+.guitar-card.gc-photo .gc-eq span:nth-child(3) { animation-delay: -0.6s; height: 50%; }
+.guitar-card.gc-photo .gc-eq span:nth-child(4) { animation-delay: -0.2s; height: 85%; }
+@keyframes gc-eq-bounce {
+  0%, 100% { transform: scaleY(0.4); }
+  50%      { transform: scaleY(1); }
+}
+
+/* Touch-device twin: scroll-active straightens & lifts (mirrors :hover) */
+@media (hover: none) {
+  .guitar-card.gc-photo.is-active { transform: rotate(0deg) translateY(-4px); }
+  .guitar-card.gc-photo.is-active .gc-svg { transform: scale(1.06); }
+}
+
 @media (max-width: 920px) {
   .guitar-card { aspect-ratio: 3 / 4; min-height: 280px; padding: 0.6rem; }
   .guitar-card .gc-content { max-width: 78%; }
