@@ -388,12 +388,69 @@ body::after {
 .nav-toggle span { width: 22px; height: 2px; background: currentColor; }
 
 @media (max-width: 820px) {
-  .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--paper); padding: 1rem var(--gutter); border-bottom: 2px solid var(--ink); }
-  .nav-links.open { display: flex; }
-  .nav-links .nav-link { padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
-  .nav-toggle { display: flex; }
+  /* Mobile nav: compact bar with logo on the left, pill capsule on the right.
+     No hamburger — all 4 links fit inline as small pills, active page filled. */
+  .nav { padding: 0.85rem var(--gutter); }
+
+  /* Hide the long wordmark/tagline; just the icon represents the brand */
+  .nav-brand-text { display: none; }
+  .nav-logo { width: 38px; }
+  .nav.scrolled .nav-logo { width: 32px; }
+
+  /* Hide hamburger toggle and the CTA button */
+  .nav-toggle { display: none !important; }
   .nav-cta { display: none; }
-  .nav.dark .nav-links { background: var(--ink); border-bottom-color: var(--amber); }
+
+  /* Pill capsule containing all 4 links, with `aria-current` page filled */
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 2px;
+    background: rgba(245, 245, 245, 0.92);
+    padding: 4px;
+    border-radius: 999px;
+    border-bottom: none;
+    align-items: center;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 4px 14px -6px rgba(0,0,0,0.18);
+    backdrop-filter: blur(10px);
+  }
+  .nav-links .nav-link {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    padding: 0.55rem 0.75rem;
+    border-radius: 999px;
+    border-bottom: none;
+    color: var(--text-soft);
+    line-height: 1;
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+  }
+  .nav-links .nav-link[aria-current="page"] {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  /* Kill the desktop underline marker — the filled pill is the new indicator */
+  .nav-link[aria-current="page"]::after { display: none; }
+
+  /* Dark hero variant — pill stays floating-glass; active pill flips to gold */
+  .nav.dark .nav-links {
+    background: rgba(245, 245, 245, 0.16);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.08) inset, 0 4px 14px -6px rgba(0,0,0,0.4);
+  }
+  .nav.dark .nav-links .nav-link {
+    color: rgba(245, 245, 245, 0.85);
+  }
+  .nav.dark .nav-links .nav-link[aria-current="page"] {
+    background: var(--amber);
+    color: var(--ink);
+  }
+}
+
+/* Very narrow phones (≤360px) — tighten letter-spacing and font slightly so
+   all 4 nav pills still fit alongside the logo without wrapping. */
+@media (max-width: 360px) {
+  .nav-links .nav-link { font-size: 0.58rem; padding: 0.5rem 0.6rem; letter-spacing: 0.1em; }
+  .nav-logo { width: 34px; }
 }
 
 /* ---------- Hero ---------- */
